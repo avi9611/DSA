@@ -4,7 +4,7 @@ class Solution {
         int sum=(N*(N+1))/2;
 
         int sum2=0;
-        for(int i=0; i<=N-1; i++){
+        for(int i=0; i<N; i++){
             sum2+=nums[i];
         }
         int missingNum=sum-sum2;

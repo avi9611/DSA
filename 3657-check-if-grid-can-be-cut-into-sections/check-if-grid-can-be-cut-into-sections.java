@@ -21,8 +21,8 @@ class Solution {
     Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
 
     for (int[] interval : intervals) {
-      final int currStart = interval[0];
-      final int currEnd = interval[1];
+      int currStart = interval[0];
+      int currEnd = interval[1];
       if (currStart < prevEnd) {
         prevEnd = Math.max(prevEnd, currEnd);
       } else {

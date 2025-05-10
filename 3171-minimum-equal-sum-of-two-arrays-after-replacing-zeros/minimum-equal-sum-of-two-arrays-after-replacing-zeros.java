@@ -17,7 +17,8 @@ class Solution {
 
         if(sum2 > sum1 && arr1_0s == 0){
             return -1;
-        } else if(sum1 > sum2 && arr2_0s == 0){
+        } 
+        if(sum1 > sum2 && arr2_0s == 0){
             return -1;
         }
         return Math.max(sum1, sum2);

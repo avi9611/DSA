@@ -15,15 +15,11 @@ class Solution {
         sum1 += arr1_0s;
         sum2 += arr2_0s;
 
-        if(sum1 == sum2){
-            return sum1;
-        } else if(sum2 > sum1){
-            if(arr1_0s == 0) return -1;
-            return sum2;
-        } else if(sum1 > sum2){
-            if(arr2_0s == 0) return -1;
-            return sum1;
+        if(sum2 > sum1 && arr1_0s == 0){
+            return -1;
+        } else if(sum1 > sum2 && arr2_0s == 0){
+            return -1;
         }
-        return -1;
+        return Math.max(sum1, sum2);
     }
 }
